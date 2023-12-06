@@ -1,0 +1,228 @@
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-logo {
+    display: inline-block;
+    width: 90%;
+    padding: 10px 30px;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: #005a48;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.header-logo img {
+    background-color: #13a6c0(173, 219, 230);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55px;
+    left: 1px;
+    font-size: 100px;
+    width: 400px;
+    height: 80px;
+    margin-right: auto;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    background-color: #13a6c0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #8b0a5a;
+    ;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-items {
+    display: inline-block;
+    width: calc(70% - 100px);
+    vertical-align: middle;
+    text-align: center;
+    color: #82f7df;
+    text-decoration: none;
+    margin: 0 15px;
+    position: center;
+    transition: color 0.3s ease;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-search {
+    display: inline-block;
+    width: calc(30%);
+    vertical-align: middle;
+    text-align: center;
+}
+
+nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #13a6c0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+    /* Ajoute une transition pour une animation en douceur */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+
+/*service card imr*/
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-card {
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 1500px;
+    height: 1500px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    margin: 10px 0;
+}
+
+.service-card p {
+    text-align: justify;
+}
+
+
+/* Contact Section Styles */
+
+#contact {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #ff6600;
+}
+
+form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #ff3300;
+    transform: scale(1.05);
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}

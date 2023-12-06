@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="final1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Painting</title>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <a href="#">Dynamic Painting Solutions LLC</a>
+                <a href="#" id="logo"><img src="media/logo.jpg" alt=""></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="About  Us.html">About US</a></li>
+                    <li class="nav-item"><a href="service.html">Service</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <li class="nav-items">
+                    <li class="nav-item"></li><a href="+1(404)447-5708"><i class="fas fa-phone"></i>Téléphone</a></li>
+                <li class="nav-item"></li><a href="Shellbark Dr, Georgia 30252"><i class="fas fa-map-marker-alt"></i>Localisation</a></li>
+                <li class="nav-item"></li><a href="Dynapas.infos@gmail.com"><i class="fas fa-envelope"></i>E-mail</a></li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+            </style>
+</head>
+
+<body>
+
+
+    <h1>Turning Your Vision into Reality</h1>
+
+    <div class="service-card">
+        <img src="media/house 15.jpg" alt="Interior Painting">
+        <h2>Interior Painting</h2>
+    </div>
+
+    <div class="service-card">
+        <img src="media/house 14.jpg" alt="Exterior Painting">
+        <h2> Painting</h2>
+    </div>
+
+    <div class="service-card">
+        <img src="media/house 1.jpg" alt="Custom Painting">
+        <h2>Custom Painting</h2>
+
+    </div>
+    <div class="service-card">
+        <img src="media/house apres.jpeg" alt="Custom Painting">
+        <h2>After</h2>
+
+    </div>
+    <div class="service-card">
+        <img src="media/house before.jpeg" alt="Custom Painting">
+        <h2>Before</h2>
+
+    </div>
+
+</body>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Ready to give your space a fresh coat of paint? Contact us for a free consultation.</p>
+        <form id="contact-form" method="POST" action="submit.php">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="Dynapas.infos@gmail.com" required>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy;
+            <?php echo date("Y"); ?> Dynamic Painting Solutions LLC. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    new Glide('.glide', {
+        type: 'carousel',
+        perView: 5,
+        focusAt: 'center',
+        autoplay: 3000,
+        arrows: {
+            prev: '.glide__arrow--left',
+            next: '.glide__arrow--right',
+        },
+    }).mount();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+</html>
